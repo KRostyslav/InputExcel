@@ -14,10 +14,8 @@ public class InputExcel {
 
 	public void WExcel() {
 		
-		HSSFWorkbook workbook = new HSSFWorkbook();
-		
-		HSSFSheet sheet = workbook.createSheet("Martcode");
-
+		HSSFWorkbook workbook = new HSSFWorkbook();		
+		HSSFSheet sheet = workbook.createSheet("TableSheet");
 		HSSFRow row = sheet.createRow(0);
 		Cell cell = row.createCell(0);
 		cell.setCellValue((String) "Java One in cell A1");
